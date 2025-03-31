@@ -9,12 +9,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Project-Pronia/Home</title>
   </head>
   <body>
@@ -30,20 +34,20 @@
       style="background-color: #abd373; height: 30px; margin-bottom: 10px"
     >
       <div class="container salam">
-        <span style="color: white; font-size: small"
+        <span style="color: white; font-size: medium"
           >HELLO EVERYONE! 25% OFF ALL PRODUCTS</span
         >
         <div class="mode">
-          <select name="form-select" id="currency">
-            <option value="">USD</option>
-            <option value="">GBP</option>
-            <option value="">ISO</option>
+          <select name="form-select" id="currency" class="dropdown">
+            <option id="currenc1" style="display: none" class="usd">USD</option>
+            <option id="currenc2" class="GBP">GBP</option>
+            <option id="currenc3" class="ISO">ISO</option>
           </select>
-          <select name="form-select" id="language">
-            <option value="">English</option>
-            <option value="">French</option>
-            <option value="">Italian</option>
-            <option value="">Spanish</option>
+          <select name="form-select" id="language" data-bs-toggle="dropdown">
+            <option class="English" style="display: none">English</option>
+            <option class="French">French</option>
+            <option class="Italian">Italian</option>
+            <option class="Spanish">Spanish</option>
           </select>
         </div>
       </div>
@@ -58,7 +62,7 @@
 
         <div class="pronia_icon">
           <a href="./index.html">
-            <img src="./4147953.png" alt="" style="width: 80px" />
+            <img src="./images/1-1-770x300.webp" alt="" style="width: 120px" />
           </a>
         </div>
 
@@ -70,13 +74,16 @@
         </div>
       </div>
     </div>
-    <hr style="margin: 0px" />
+    <hr style="margin: 10px" />
 
-    <nav class="web_pages container">
+    <nav class="web_pages container" style="margin-bottom: 10px">
       <div class="row">
         <div class="col col-12">
           <ul>
-            <li><a href="">HOME</a></li>
+            <li class="home">
+              <a class="sagol" href="#">HOME</a>
+            </li>
+
             <li><a href="">SHOP</a></li>
             <li><a href="">BLOG</a></li>
             <li><a href="">ABOUT US</a></li>
@@ -87,6 +94,11 @@
       </div>
     </nav>
 
+    <ul class="dropdown">
+      <li><a href="#">Home One</a></li>
+      <li><a href="#">Home Two</a></li>
+    </ul>
+
     <div class="main_slide" style="background-color: #f8eee6">
       <div id="carouselExample" class="carousel slide" style="height: 580px">
         <div class="carousel-inner container" style="height: 100%">
@@ -96,15 +108,12 @@
             <p>Pronia, With 100% Natural,Organiv & Plant Shop.</p>
             <button class="btn btn-success discoverBtn">DISCOVER NOW</button>
           </div>
-          <div class="img-wrapper">
+          <div class="img-wrapper" style="width: 400px">
             <div class="carousel-item active">
-              <img src="./burgerad15179945781952220614.png" alt="..." />
+              <img src="./images/1-1-524x617.webp" alt="..." />
             </div>
             <div class="carousel-item">
-              <img
-                src="./advertisement-designing-services-1000x1000.jpg"
-                alt="..."
-              />
+              <img src="" alt="..." />
             </div>
           </div>
         </div>
@@ -131,22 +140,43 @@
       </div>
     </div>
 
-<section id="services">
-  <div class="col-md-4 col-lg-4">
-    <div class="shipping">
-      <p>sdsds</p>
-      <i class="fa-light fa-truck-fast"></i>
-    </div>
-  </div>
-
-</section>
-
-
-
-
+    <section id="service-area" style="padding-top: 50px; width: 100%">
+      <div class="container">
+        <div class="col-md-4 col-lg-4 col-md-4 services_info">
+          <div class="shipping">
+            <div class="shipping-img">
+              <img src="#" alt="" />
+            </div>
+            <div class="shipping-text">
+              <h5>Free Shipping</h5>
+              <p>Capped at $319 per order</p>
+            </div>
+          </div>
+          <div class="shipping">
+            <div class="shipping-img">
+              <img src="#" alt="" />
+            </div>
+            <div class="shipping-text">
+              <h5>Safe Payment</h5>
+              <p>With our payment gateway</p>
+            </div>
+          </div>
+          <div class="shipping">
+            <div class="shipping-img">
+              <img src="#" alt="" />
+            </div>
+            <div class="shipping-text">
+              <h5>Best Services</h5>
+              <p>Friendly & Supper Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="filteredPlants" class="row" style="margin: 50px">
-      <div class="product_span"
+      <div
+        class="product_span"
         style="
           display: flex;
           align-items: center;
@@ -154,9 +184,15 @@
           margin-bottom: 30px;
         "
       >
-        <hr style="width: 5%; display: inline-block ;" />
-        <h1 style="margin: 0 10px">OUR PRODUCTS</h1>
-        <hr style="width: 5%; display: inline-block" />
+        <div
+          class="content line"
+          style="background-color: #abd373; height: 3px; width: 100px"
+        ></div>
+        <h1 style="margin: 0 20px; font-weight: bolder">OUR PRODUCTS</h1>
+        <div
+          class="content line"
+          style="background-color: #abd373; height: 3px; width: 100px"
+        ></div>
       </div>
       <div
         class="filters"
@@ -166,21 +202,339 @@
           <a href="#">Featured</a>
         </div>
 
-        <div class="brd " style="width: 130px; height: 40px">
+        <div class="brd" style="width: 130px; height: 40px">
           <a href="#">Bestseller</a>
         </div>
-        <div class="brd " style=" width: 130px; height: 40px">
+        <div class="brd" style="width: 130px; height: 40px">
           <a href="#">Latest</a>
         </div>
       </div>
     </section>
 
-    <section id="cards_sections">
+    <section id="cards_sections" style="margin-bottom: 50px">
       <div class="container">
-        <div class="row cards"></div>
+        <div class="row cards" style="margin-left: 3px"></div>
       </div>
     </section>
 
+    <div id="collections-images">
+      <div class="container">
+        <div class="row collections-image">
+          <div class="col-lg-8" style="margin-bottom: 20px">
+            <div class="img-long-1">
+              <div class="collections_text_long">
+                <h6 style="width: 100%">Collection Of Cactus</h6>
+                <h1 style="margin-bottom: 25px">Pottery Pots & Plant</h1>
+                <button class="btn btn-success shop_now">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" style="margin-bottom: 20px">
+            <div class="img-short-1">
+              <div class="collections_text_short">
+                <h6>New Collection</h6>
+                <h1 style="margin-bottom: 25px">Plant Port</h1>
+                <button class="btn btn-success shop_now">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" style="margin-bottom: 20px">
+            <div class="img-short-2">
+              <div class="collections_text_short">
+                <h6>New Collection</h6>
+                <h1 style="margin-bottom: 25px">Plant Port</h1>
+                <button class="btn btn-success shop_now">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8" style="margin-bottom: 20px">
+            <div class="img-long-2">
+              <div class="collections_text_long">
+                <h6 style="width: 100%">Collection Of Cactus</h6>
+                <h1 style="margin-bottom: 25px">Hanging Pots & Plant</h1>
+                <button class="btn btn-success shop_now">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="section_title">
+        <div class="title">
+          <div
+            class="content line"
+            style="background-color: #abd373; height: 3px; width: 100px"
+          ></div>
+          <h1 style="margin: 0 20px; font-weight: bolder">NEW PRODUCTS</h1>
+          <div
+            class="content line"
+            style="background-color: #abd373; height: 3px; width: 100px"
+          ></div>
+        </div>
+        <div class="desc">
+          <h6 class="container">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <section id="cards_sections" style="margin-bottom: 50px">
+      <div class="container">
+        <div class="row newCards" style="margin-left: 3px"></div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container-fluid">
+        <div class="background-img">
+          <div class="clientsSay">
+            <div
+              class="content line"
+              style="background-color: #abd373; height: 3px; width: 100px"
+            ></div>
+            <h1 style="margin: 0 20px; font-weight: bolder">WHAT SAY CLIENT</h1>
+            <div
+              class="content line"
+              style="background-color: #abd373; height: 3px; width: 100px"
+            ></div>
+          </div>
+          <div class="clientsDesc">
+            <h6 class="container">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature
+            </h6>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="client_card border border-1">
+                  <img src="./images/2.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/3.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/1.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_card border border-1">
+                  <img src="./images/2.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/3.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/1.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_card border border-1">
+                  <img src="./images/2.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/3.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+                <div class="client_card border border-1">
+                  <img src="./images/1.webp" class="card-img-top" alt="..." />
+                  <div class="client-card-body">
+                    <h5 class="card-title" style="margin: 15px 0px">
+                      Phoenix Baker
+                    </h5>
+                    <h5 class="card-title">Client</h5>
+                    <p
+                      class="card-text"
+                      style="font-style: italic; padding-top: 20px"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium autem officia veritatis dolorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-loqo">
+                <img src="./images/1-1-770x300.webp" style="margin-bottom: 30px;" alt="" />
+                <p style="margin-bottom: 30px;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Fugit autem debitis quod, velit accusantium mollitia atque
+                  quas voluptatem error ratione saepe consequatur ipsum ut
+                  soluta a architecto? Odit, aliquid vitae.
+                </p>
+                <div class="network">
+                  <div class="socials-container">
+                    <a href="#" class="social twitter">
+                      <svg height="1em" viewBox="0 0 512 512">
+                        <path
+                          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                        ></path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="social facebook"
+                      ><svg height="1em" viewBox="0 0 320 512">
+                        <path
+                          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                        ></path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="social google-plus">
+                      <svg height="1em" viewBox="0 0 640 512">
+                        <path
+                          d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                        ></path>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="social instagram"
+                      ><svg height="1em" viewBox="0 0 448 512">
+                        <path
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 pt-40">
+
+            </div>
+            <div class="col-lg-2 col-md-4 pt-40"></div>
+            <div class="col-lg-2 col-md-4 pt-40"></div>
+            <div class="col-lg-3 pt-40"></div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div><p>dsds</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

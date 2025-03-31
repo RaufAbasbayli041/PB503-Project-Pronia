@@ -4,65 +4,125 @@
         "id": "1",
         "name": "American Marigold",
         "price": 23.45,
-        "image": "https://i.postimg.cc/TwT0njhg/little-duck-yellow-1-400x400.jpg",
-        "hoverImage": "https://i.postimg.cc/TwT0njhg/little-duck-yellow-1-400x400.jpg",
-        "rating": 5
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+        "rating": 3
       },
       {
         "id": "2",
         "name": "Black Eyed Susan",
         "price": 25.45,
-        "image": "https://example.com/images/black-eyed-susan.png",
-        "hoverImage": "https://example.com/images/black-eyed-susan-hover.png",
-        "rating": 5
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-2-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+        "rating": 4
       },
       {
         "id": "3",
         "name": "Bleeding Heart",
         "price": 30.45,
-        "image": "https://example.com/images/bleeding-heart.png",
-        "hoverImage": "https://example.com/images/bleeding-heart-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
         "rating": 5
       },
       {
         "id": "4",
         "name": "Bloody Cranesbill",
         "price": 45.00,
-        "image": "https://example.com/images/bloody-cranesbill.png",
-        "hoverImage": "https://example.com/images/bloody-cranesbill-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
         "rating": 5
       },
       {
         "id": "5",
         "name": "Butterfly Weed",
         "price": 50.45,
-        "image": "https://example.com/images/butterfly-weed.png",
-        "hoverImage": "https://example.com/images/butterfly-weed-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
         "rating": 5
       },
       {
         "id": "6",
         "name": "Common Yarrow",
         "price": 65.00,
-        "image": "https://example.com/images/common-yarrow.png",
-        "hoverImage": "https://example.com/images/common-yarrow-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
         "rating": 5
       },
       {
         "id": "7",
         "name": "Doublefile Viburnum",
         "price": 67.45,
-        "image": "https://example.com/images/doublefile-viburnum.png",
-        "hoverImage": "https://example.com/images/doublefile-viburnum-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-7-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
         "rating": 5
       },
       {
         "id": "8",
         "name": "Feather Reed Grass",
         "price": 20.00,
-        "image": "https://example.com/images/feather-reed-grass.png",
-        "hoverImage": "https://example.com/images/feather-reed-grass-hover.png",
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-8-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-1-270x300.jpg",
         "rating": 5
+      }
+    ],
+    "newproducts": [
+      {
+        "id": "1",
+        "name": "SALAM",
+        "price": 35.85,
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-10-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-9-270x300.jpg",
+        "rating": 3
+      },
+      {
+        "id": "2",
+        "name": "Black Eyed Susan",
+        "price": 18.60,
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-11-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-3-270x300.jpg",
+        "rating": 4
+      },
+      {
+        "id": "3",
+        "name": "Bleeding Heart",
+        "price": 72.14,
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-5-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-6-270x300.jpg",
+        "rating": 5
+      },
+      {
+        "id": "4",
+        "name": "Bloody Cranesbill",
+        "price": 29.38,
+        "image": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-4-270x300.jpg",
+        "hoverImage": "https://htmldemo.net/pronia/pronia/assets/images/product/medium-size/1-10-270x300.jpg",
+        "rating": 2
       }
     ]
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
