@@ -10,9 +10,9 @@ import { endpoint } from "./constant.js";
 async function getPlants() {
   try {
     const plants = await getAllDatas(endpoint.products);
-    const newPlants = await getAllDatas(endpoint.newproducts)
+    const newPlants = await getAllDatas(endpoint.newproducts);
     printCards(plants.data);
-    printNewCards(newPlants.data)
+    printNewCards(newPlants.data);
   } catch (error) {
     console.log(error);
   }
@@ -20,7 +20,7 @@ async function getPlants() {
 
 function printCards(plants) {
   const cards = document.querySelector(".cards");
- 
+
   cards.innerHTML = "";
   plants.forEach((plant) => {
     let stars = "";
@@ -41,8 +41,6 @@ function printCards(plants) {
               
               </ul>
             </div>`;
-   
-    
 
     const cardElement = cardWrapper.querySelector(".card");
     const cardImg1 = cardWrapper.querySelector(".card_image-1");
@@ -63,14 +61,16 @@ function printCards(plants) {
 
 getPlants();
 
-// var button=document.querySelector(".sagol");
-// const dropdown=document.querySelector(".dropdown")
-// button.addEventListener("mouseover",()=>{
-//     dropdown.style.display="block"
-// });
-// button.addEventListener("mouseout",()=>{
-//   dropdown.style.display="none"
-// });
+let menu = document.querySelector(".sagol");
+let dropdown = document.querySelector(".dropdown");
+
+menu.addEventListener("mouseover", () => {
+  dropdown.style.display = "block";
+});
+
+menu.addEventListener("mouseout", () => {
+  dropdown.style.display = "none";
+});
 
 document.getElementById("currency").addEventListener("change", function () {
   var selectedOption = this.value;
@@ -98,7 +98,6 @@ document.getElementById("language").addEventListener("change", function () {
 
 // scrol event
 
-
 function printNewCards(plants) {
   const newCards = document.querySelector(".newCards");
   newCards.innerHTML = "";
@@ -121,8 +120,6 @@ function printNewCards(plants) {
               
               </ul>
             </div>`;
-              
-    
 
     const cardElement = cardWrapper.querySelector(".card");
     const cardImg1 = cardWrapper.querySelector(".card_image-1");
@@ -141,15 +138,18 @@ function printNewCards(plants) {
   });
 }
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    
+    el: ".swiper-pagination",
   },
+});
 
+const payment_number = document.querySelector(".payment_number");
+payment_number.addEventListener("click", () => {
+  alert("are u sure");
 });
