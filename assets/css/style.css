@@ -304,7 +304,7 @@ hr {
 }
 
 #collections-images .img-long-1 {
-  background-image: url(../../images/1-1-770x300\\(1\).webp);
+  background-image: url(../../images/11-1-770x300\\(1\).webp);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -593,7 +593,6 @@ hr {
   flex-direction: column;
 }
 
-
 #menu_img .menu-2 ul {
   padding-top: 10px;
   display: flex;
@@ -615,11 +614,10 @@ hr {
   transition: 0.75s;
 }
 
-
-#story .title{
-display: flex;
-flex-direction: column;
-margin-bottom: 30px;
+#story .title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 #story .ourStory {
@@ -628,30 +626,70 @@ margin-bottom: 30px;
   align-items: center;
 }
 
-
-#story .ourStory H1{
+#story .ourStory H1 {
   margin-right: 10px;
   font-size: 60px;
   margin-bottom: 0px;
 }
 
-#story .ourStory span{
+#story .ourStory span {
   font-size: 60px;
   color: #abd373;
 }
 
-#story .title img{
+#story .title img {
   margin-left: 124.9px;
- width: 173.68x;
-
+  width: 173.68x;
 }
 
-#story  .ourDescription p{
+#story .ourDescription p {
   font-size: 20px;
   font-weight: 600;
-
 }
 
-#story img{
+#story img {
   padding-top: 20px;
 }
+
+#video_section .videoDiv{
+  background-image: url(../../images/3-1-1208x542.webp);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#video_section .videoDiv .video a{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* From Uiverse.io by Carlos-vargs */ 
+.button {
+  display: flex;
+  justify-content: center;
+  color: #abd373;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%);
+  transition: all 0.75s ease-in-out 0.7;s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px #abd373;
+  }
+}
+
+
