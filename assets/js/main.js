@@ -153,3 +153,26 @@ const payment_number = document.querySelector(".payment_number");
 payment_number.addEventListener("click", () => {
   alert("are u sure");
 });
+
+
+var sticky = document.querySelector("#main_options-stickyy");
+let isVisible = false; // Флаг, чтобы не запускать повторно
+let timeoutId;
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 250 && !isVisible) {
+    isVisible = true; // Фиксируем, что меню показано
+
+    timeoutId = setTimeout(() => {
+      sticky.style.opacity = "1";
+      sticky.style.display = "block"; // Показываем плавно
+    }); // Задержка 2 сек
+  }
+
+  if (window.scrollY < 250) {
+    clearTimeout(timeoutId); // Останавливаем таймер
+    isVisible = false;
+    sticky.style.opacity = "0";
+    sticky.style.display = "none"; // Прячем
+  }
+});
