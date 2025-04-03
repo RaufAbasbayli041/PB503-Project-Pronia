@@ -304,7 +304,7 @@ hr {
 }
 
 #collections-images .img-long-1 {
-  background-image: url(../../images/11-1-770x300\\(1\).webp);
+  background-image: url(../../images/11-1-770x300\ \(1\).webp);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -653,12 +653,23 @@ hr {
 
 #video_section .videoDiv{
   background-image: url(../../images/3-1-1208x542.webp);
-  height: 500px;
+  height: 493px;
+padding: 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  
 }
+
+#video_section .videoArea{
+  box-shadow: #afa1a1 1px 1px 20px 1px;
+  border: rgb(255, 255, 255) solid;
+  border-width: 10px;
+  height: 513px;
+  margin-bottom: 100px;
+
+}
+
 
 #video_section .videoDiv .video a{
 display: flex;
@@ -675,7 +686,7 @@ align-items: center;
   height: 80px;
   border-radius: 100%;
   background: linear-gradient(30deg, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 80%);
-  transition: all 0.75s ease-in-out 0.7;s;
+  transition: all 0.75s ease-in-out 0.7s;
   box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
   animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
   align-items: center;
@@ -693,3 +704,28 @@ align-items: center;
 }
 
 
+.hesabat {
+  display: flex;
+  flex-direction: column;
+}
+
+.hesabat ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.hesabat ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 300px;
+}
+
+.hesabat ul li span{
+text-align: center;
+  width: 300px;
+}
