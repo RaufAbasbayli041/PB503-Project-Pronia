@@ -1,3 +1,7 @@
+.container {
+  width: 1080px;
+}
+
 .header {
   padding: 10px 12px;
   display: flex;
@@ -68,7 +72,6 @@
 
 #main_header .salam,
 .options {
-  width: 1300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,7 +307,7 @@ hr {
 }
 
 #collections-images .img-long-1 {
-  background-image: url(../../images/11-1-770x300\\(1\).webp);
+  background-image: url(../../images/11-1-770x300-1.webp);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -347,7 +350,6 @@ hr {
   margin: 50px 0px;
 }
 #section_title .desc {
-  width: 600px;
   text-align: center;
 }
 
@@ -422,7 +424,7 @@ hr {
 
 #clients .clientsDesc {
   padding-top: 30px;
-  width: 600px;
+
   text-align: center;
   margin-bottom: 50px;
 }
@@ -519,16 +521,12 @@ hr {
 
 #footer {
   background-image: url(../../images/1-1920x465.webp);
-  height: 465px;
+
   display: flex;
   padding-top: 150px;
   align-items: center;
 
   flex-direction: column;
-}
-
-#footer .first {
-  width: 30%;
 }
 
 #footer .links li {
@@ -548,12 +546,10 @@ hr {
 
 #footer .links {
   padding: 30px 15px 0px 15px;
-  width: 15%;
 }
 
 #footer .payment {
   padding: 30px 15px 0px 15px;
-  width: 25%;
 }
 
 #footer .payment a {
@@ -575,6 +571,12 @@ hr {
 #footer .bottom_text a {
   text-decoration: none;
   color: #588618;
+}
+
+#footer .bottom_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu_img .img_us {
@@ -744,4 +746,78 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.form-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  box-shadow: #afa1a1 1px 1px 20px 1px;
+}
+
+.contactInfo {
+  padding: 30px 40px;
+  width: 370px;
+  height: 100%;
+  color: white;
+  background-image: url(../../images/1-1-370x500\ c.webp);
+}
+
+.form-info .contactInfo ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 120px;
+}
+
+.form-info .contactInfo ul li a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: white;
+}
+
+.form-info .contactInfo ul li {
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+
+.form-info .contactForm {
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.form-info .contactForm input,textarea {
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+  color: #8d8d8c;
+  width: 100%;
+  font-style: italic;
+box-shadow: none ;
+outline: none;
+}
+
+
+
+
+#inputMessage{
+  height: 100px;
+  width: 100%;
+}
+
+.contactForm .col-md-6{
+  padding-left: 0px;
+}
+
+.contactForm .postBtn {
+  background-color: #abd373;
+  border-color: #abd373;
+  width: 180px;
+  height: 40px;
+  font-size: small;
+}
+
+.contactForm .postBtn:hover {
+  background-color:black;
+  border-color: black;
+
 }
