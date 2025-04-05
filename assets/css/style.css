@@ -786,25 +786,23 @@ hr {
   padding: 0px 20px;
 }
 
-.form-info .contactForm input,textarea {
+.form-info .contactForm input,
+textarea {
   border: 0;
   border-bottom: 1px solid #dee2e6;
   color: #8d8d8c;
   width: 100%;
   font-style: italic;
-box-shadow: none ;
-outline: none;
+  box-shadow: none;
+  outline: none;
 }
 
-
-
-
-#inputMessage{
+#inputMessage {
   height: 100px;
   width: 100%;
 }
 
-.contactForm .col-md-6{
+.contactForm .col-md-6 {
   padding-left: 0px;
 }
 
@@ -817,7 +815,8 @@ outline: none;
 }
 
 .contactForm .postBtn:hover {
-  background-color:black;
+  background-color: black;
   border-color: black;
-
 }
+
+

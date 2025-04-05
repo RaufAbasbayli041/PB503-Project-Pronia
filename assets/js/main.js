@@ -9,6 +9,7 @@ import { endpoint } from "./constant.js";
 
 async function getPlants() {
   try {
+
     const plants = await getAllDatas(endpoint.products);
     const newPlants = await getAllDatas(endpoint.newproducts);
     printCards(plants.data);
@@ -17,6 +18,12 @@ async function getPlants() {
     console.log(error);
   }
 }
+
+let sp = document.querySelector(".sp")
+window.addEventListener()
+
+
+
 
 function printCards(plants) {
   const cards = document.querySelector(".cards");

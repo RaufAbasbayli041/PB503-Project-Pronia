@@ -24,6 +24,13 @@
     <title>Project-Pronia/ContactUs</title>
   </head>
   <body>
+
+    <!-- <div class="spinner-border m-5 sp" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div> -->
+
+
+
     <div class="container-fluid header">
       <h5 id="logo ">PB503 Mini Project</h5>
       <form class="d-flex" role="search">
@@ -209,7 +216,6 @@
                       placeholder="Last Name*"
                     />
                     <span class="text-danger error-lastName"></span>
-
                   </div>
                   <div class="col-md-6">
                     <input
@@ -219,26 +225,33 @@
                       placeholder="Phone*"
                     />
                     <span class="text-danger error-phone"></span>
-
                   </div>
                   <div class="col-md-6">
                     <input
                       type="email"
-                      class="form-control "
+                      class="form-control"
                       id="inputEmail"
                       placeholder="Email*"
                     />
                     <span class="text-danger error-email"></span>
-
                   </div>
 
                   <div class="col-12">
-                    <textarea id="inputMessage" placeholder="Message"></textarea>
+                    <textarea
+                      id="inputMessage"
+                      placeholder="Message"
+                    ></textarea>
                     <span class="text-danger error-message"></span>
-
                   </div>
 
-                  <div class="col-12" style="display: flex; justify-content: end; padding-top: 20px;">
+                  <div
+                    class="col-12"
+                    style="
+                      display: flex;
+                      justify-content: end;
+                      padding-top: 20px;
+                    "
+                  >
                     <button type="submit" class="btn btn-primary postBtn">
                       POST COMMENT
                     </button>
