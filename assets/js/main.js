@@ -19,11 +19,6 @@ async function getPlants() {
   }
 }
 
-let sp = document.querySelector(".sp")
-window.addEventListener()
-
-
-
 
 function printCards(plants) {
   const cards = document.querySelector(".cards");
